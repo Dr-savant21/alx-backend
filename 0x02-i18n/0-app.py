@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-from flask import Flask, render_template, redirect, url_for, request;
+from flask import Flask, render_template
 
 app = Flask (__name__, template_folder="templates", static_folder="staticFolder")
+
+app = Flask(__name__)
 
 @app.route("/")
 def index():
